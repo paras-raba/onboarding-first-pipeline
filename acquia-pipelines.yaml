@@ -4,10 +4,10 @@ events:
     steps:
       - welcome:
           script:
-            - echo 'STARTED'
-            - echo 'env hello: $ENV_HELLO'
-            - echo 'env admin: $ADMIN_USERNAME'
-            - echo 'FINISHED'
+            - echo "STARTED"
+            - echo "env hello: $ENV_HELLO"
+            - echo "env admin: $ADMIN_USERNAME"
+            - echo "FINISHED"
 
 variables:
   global:
