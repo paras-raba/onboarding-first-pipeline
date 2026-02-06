@@ -3,8 +3,10 @@ events:
   build:
     steps:
       - welcome:
+          type: script
           script:
             - echo "STARTED"
+            - echo "PIPELINE_ENV $PIPELINE_ENV"
             - echo "env hello: $ENV_HELLO"
             - echo "env admin: $ADMIN_USERNAME"
             - echo "FINISHED"
