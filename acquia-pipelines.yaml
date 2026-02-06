@@ -1,0 +1,16 @@
+version: 1.1.0
+events:
+  build:
+    steps:
+      - welcome:
+          script:
+            - echo 'STARTED'
+            - echo 'env hello: $ENV_HELLO'
+            - echo 'env admin: $ADMIN_USERNAME'
+            - echo 'FINISHED'
+
+variables:
+  global:
+    ADMIN_USERNAME: admin
+    ENV_HELLO:
+      secure: 2act+dxpkk1VwgCwIll8qYhK4T7xNlg6Mren1l0RRR9LQaUVfGLdEUlNeUWOaa/QjHU+2XD6v1Eb3z4XIlGYcf80tV/fAvvFPVpPPS81qLim3sSsRvPwrKH1sgcQg1jpbshANggMFuZdTiIZS0NS645V+Au5A4kEnxLiSiTQu3vOEn7Oka5qX6JTv2KdZbolc70aRImDiiTm+yhyoO4lbapBpYxurRiyNroRNYX43smOLklGCP8j4IdywGgV90RvSzeKhitar0qz29xok41KjrOVyTYY3yUTlAs6tUI0X4KhcRZhbC7Li458AzbrkQMHJIgbUkwhLmLOkwiMdXLGK7TCfB3ykrWA2+kX0TOX8ZJx6l4rK04QlQwcb6oRBAwvSWw9MSnQ0MrAIGY+aC7flkqpQs4eEJKVvRISDri7dbsnrVa1rVqFHDbZ1IG7Hf+X0oNeDQa78axFDcK5CEkkdRuVBgy2hcW2uKFw10rDA6myNxVhy+4Af+theVJIzdNO6Ss5Vfw70O4jlTwVNWsDOUwk34sTbP1pXPAiGSX1hArRIfakJBfKDZC4odo+cV2yNpbDpexHe4jpSUr4+usiYx7Udl760iLa9k+h0poNBQb6N4dJqwtulZfXjt1VSwjzl1MysMRfbKgf1stJNoZUNFeVTDottZVDj5UAgHVbxwRcEI=emhw4JmPPg2yji6pJ4EAMdnMKKspXOKGs7jxYeD15dRv2ywvVY5tguYRkrNe4W2USRIs9/SCizjGvb9w5t20hcTrjBLxOE//E8szEYsEXqVibg2DHJUPVym7osylKvm/JLO64rc950H1kn/lwpBQk0MsycP4JtiqlmdDi4j5BXo=
