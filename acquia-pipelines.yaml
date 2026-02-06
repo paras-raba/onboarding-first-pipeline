@@ -7,8 +7,8 @@ events:
           script:
             - echo "STARTED"
             - echo "PIPELINE_ENV $PIPELINE_ENV"
-            - echo "env hello: $ENV_HELLO"
-            - echo "env admin: $ADMIN_USERNAME"
+            - echo "ENV_HELLO $ENV_HELLO"
+            - echo "ADMIN_USERNAME $ADMIN_USERNAME"
             - echo "FINISHED"
 
 variables:
