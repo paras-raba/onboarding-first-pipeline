@@ -17,7 +17,7 @@ events:
           type: script
           script:
             - echo "Simulating CDE delete failure (PIPE-8303 repro)"
-            - exit 1
+            - exit 0
             - pipelines-deploy
   pr-closed:
     steps:
