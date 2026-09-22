@@ -6,6 +6,7 @@ events:
           type: script
           script:
             - echo "STARTED"
+            - echo "PIPE-8303 repro branch: pipe-8303-repro"
             - echo "PIPELINE_ENV $PIPELINE_ENV"
             - echo "ENV_HELLO $ENV_HELLO"
             - echo "ADMIN_USERNAME $ADMIN_USERNAME"
