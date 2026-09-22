@@ -10,6 +10,20 @@ events:
             - echo "ENV_HELLO $ENV_HELLO"
             - echo "ADMIN_USERNAME $ADMIN_USERNAME"
             - echo "FINISHED"
+  pr-merged:
+    steps:
+      - deploy:
+          type: script
+          script:
+            - echo "Simulating CDE delete failure (PIPE-8303 repro)"
+            - exit 1
+            - pipelines-deploy
+  pr-closed:
+    steps:
+      - deploy:
+          type: script
+          script:
+            - pipelines-deploy
 
 variables:
   global:
